@@ -1,4 +1,4 @@
-// const sampleObj = require('./sampleObj.json');
+// const demoObject = require('./demo/demo.json');
 const {objectInfo} = require('./utils');
 const returnBeautifiedObj = require('./beautifyObj');
 
@@ -8,5 +8,5 @@ function getBeautified(obj) {
   returnBeautifiedObj('', obj, 2, { isTopLevel: true });
 }
 
-// console.log(getBeautified(sampleObj));
+// console.log(getBeautified(demoObject));
 module.exports = getBeautified;
