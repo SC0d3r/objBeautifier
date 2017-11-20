@@ -1,14 +1,11 @@
 {
-  "name": "object-face",
+  "name": "object-beautifier",
   "version": "1.0.0",
   "description": "simple lib for dispalying obj with color in terminal (beautifier)",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "asd"
+    "url": "https://github.com/SC0d3r/objBeautifier.git"
   },
   "keywords": [
     "beautifier",
