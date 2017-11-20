@@ -1,0 +1,23 @@
+{
+  "array": [
+    1,
+    2,
+    3
+  ],
+  "strArray":[
+    "Batman" , "Joker" , "Harley"
+  ],
+  "boolean": true,
+  "null": null,
+  "number": 123,
+  "myObject": {
+    "a": "b",
+    "c": "d",
+    "innerObject" : {
+      "n" : "rt",
+      "m" : "tx"
+    },
+    "e": "f"
+  },
+  "string": "Hello World"
+}
