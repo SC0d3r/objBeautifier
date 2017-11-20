@@ -11,13 +11,15 @@ function returnBeautifiedObj(keyOfObject, obj, keyPadding = 3, { isTopLevel } = 
   const values = keys.map(k => obj[k]);
   const addBrace = brace => clc.yellow(brace);
   let resultString = '';
-
-  if (keyOfObject)
+  const isTopLevelYet = (keyPadding === 4 || keyPadding === 2);
+  if (keyOfObject){
     resultString = clc.cyan(
-      pad(keyPadding / 2 + 1 + keyOfObject.toString().length, keyOfObject)
+      pad(keyPadding / 2 + keyOfObject.toString().length + (isTopLevelYet ? 0 : 1 + Math.abs(3 - keyPadding / 2)), keyOfObject)
     );
+  }
 
-  resultString += '\n' + addBrace(isTopLevel ? '{' : pad(2 + keyPadding / 2, '{'));
+
+  resultString += '\n' + addBrace(isTopLevel ? '{' : pad(1 + keyPadding / 2 + Math.abs(2 - keyPadding / 2), '{'));
   for (let i = 0; i < keys.length; i++) {
     let currentKey = keys[i];
     if (isNumber(currentKey)) currentKey = `[${currentKey}]`;
@@ -31,7 +33,7 @@ function returnBeautifiedObj(keyOfObject, obj, keyPadding = 3, { isTopLevel } = 
     const valueToPrint = decorateValue(isTopLevel, currentValue);
     resultString += '\n' + keyToPrint + ' : ' + valueToPrint;
   }
-  resultString += '\n' + addBrace(isTopLevel ? '}' : pad(2 + keyPadding / 2, '}'));
+  resultString += '\n' + addBrace(isTopLevel ? '}' :  pad(1 + keyPadding / 2 + Math.abs(2 - keyPadding / 2), '}'));
 
   return resultString;
 }
