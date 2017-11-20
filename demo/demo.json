@@ -4,8 +4,10 @@
     2,
     3
   ],
-  "strArray":[
-    "Batman" , "Joker" , "Harley"
+  "strArray": [
+    "Batman",
+    "Joker",
+    "Harley"
   ],
   "boolean": true,
   "null": null,
@@ -13,9 +15,21 @@
   "myObject": {
     "a": "b",
     "c": "d",
-    "innerObject" : {
-      "n" : "rt",
-      "m" : "tx"
+    "innerObject": {
+      "n": "rt",
+      "m": "tx",
+      "anotherLevel": {
+        "gg": 23,
+        "tt": 44,
+        "yetAnotherLevel": {
+          "grrg": 23,
+          "ttaa": 44,
+          "wwwww": {
+            "grrg": 23,
+            "ttaa": 44
+          }
+        }
+      }
     },
     "e": "f"
   },
