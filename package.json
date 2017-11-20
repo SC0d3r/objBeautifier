@@ -1,6 +1,6 @@
 {
   "name": "object-beautifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple lib for dispalying obj with color in terminal (beautifier)",
   "main": "index.js",
   "repository": {
