@@ -1,0 +1,26 @@
+{
+  "name": "object-face",
+  "version": "1.0.0",
+  "description": "simple lib for dispalying obj with color in terminal (beautifier)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "asd"
+  },
+  "keywords": [
+    "beautifier",
+    "object",
+    "obj",
+    "color",
+    "utility"
+  ],
+  "author": "SC0d3r",
+  "license": "MIT",
+  "dependencies": {
+    "cli-color": "^1.2.0",
+    "pad": "^2.0.3"
+  }
+}
